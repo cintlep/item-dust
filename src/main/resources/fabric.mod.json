@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "itemdust",
+	"version": "${version}",
+	"name": "Item Dust",
+	"description": "Particle effect for when a dropped item stops existing",
+	"authors": [
+		"cintlex"
+	],
+	"contact": {
+		"issues": "https://github.com/cintlep/item-dust/issues",
+		"sources": "https://github.com/cintlep/item-dust"
+	},
+	"license": "MIT",
+	"icon": "assets/itemdust/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.cintlex.itemdust.ItemDust"
+		]
+	},
+	"mixins": [
+		"itemdust.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": ">=1.21.6",
+		"java": ">=21",
+		"fabric-api": ">=0.126.0+1.21.6"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
